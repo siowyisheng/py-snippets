@@ -1,6 +1,14 @@
-# py-snippets
+# The Simple Guide to Python
 
-Useful python snippets.
+_Python explained simply._
+
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/siowyisheng/simple-graphql/blob/master/LICENSE) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+
+## Table of Contents <!-- omit in toc -->
+
+- [What is Python?](#what-is-python)
+
+## What is Python?
 
 ### How do I do profiling in Python?
 
@@ -133,3 +141,51 @@ There are pros and cons.
 Module-level tests have omit the meaningless `self` argument and are flatter.
 
 Grouping tests into classes(one class per class tested in the module) allows us to use the same test name when two classes have the same function name to be tested. It also forces us to group our tests by the class they are testing (and also enables automatic grouping using a text editor).
+
+# python-tricks
+
+Short, useful recipes for various uses in python. Check out the other markdown files for tricks in those categories.
+
+### Alternative data types
+
+```
+namedtuple
+  for cleaner implementation of objects with only attributes
+deque
+  for a list-like data type with fast append and prepend
+Counter
+  for clean counting of objects in a list
+```
+
+### Reasonable short variable names for one-use scripts
+
+```
+val = 5
+ind = 0 # index
+[i for i in range(100)]
+s = ''
+lst = []
+lists = [[],[]]
+d = {}
+tup = ()
+with open('myfile.txt','w') as f:
+  ...
+t = time.time()
+dt = datetime.datetime.now()
+td = datetime.timedelta(days=1)
+heap = []
+heapq.heapify(heap)
+```
+
+### Naming things
+
+- Use Pronounceable names
+- Use Solution Domain Names
+- Also Use Problem Domain Names
+- Avoid Mental Mapping
+- Nothing is intuitive
+- Avoid Disinformation
+- Names are only Meaningful in Context
+- Don't add Artificial Context
+- Use plural for a list (burgers = [])
+- Use total for a count of objects (total_burger = 0)
