@@ -2,13 +2,19 @@
 
 _Python explained simply._
 
-[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/siowyisheng/simple-graphql/blob/master/LICENSE) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
+[![GitHub license](https://img.shields.io/badge/license-MIT-blue.svg)](https://github.com/siowyisheng/simple-python/blob/master/LICENSE) ![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)
 
 ## Table of Contents <!-- omit in toc -->
 
 - [What is Python?](#what-is-python)
 
 ## What is Python?
+
+<!--
+An except clause may name multiple exceptions as a parenthesized tuple, for example:
+except (IDontLikeYouException, YouAreBeingMeanException) as e:
+    pass
+-->
 
 ### How do I do profiling in Python?
 
