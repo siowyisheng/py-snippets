@@ -16,6 +16,10 @@ except (IDontLikeYouException, YouAreBeingMeanException) as e:
     pass
 -->
 
+### How do I install Python 3.7 on Ubuntu?
+
+https://tecadmin.net/install-python-3-7-on-ubuntu-linuxmint/
+
 ### How do I do profiling in Python?
 
 ```python
@@ -43,6 +47,17 @@ $ python3 -m timeit '"-".join(str(n) for n in range(100))'
 10000 loops, best of 5: 30.2 usec per loop
 ```
 
+### How do I do string interpolation?
+
+```python
+f'Good morning Mr {last_name}'
+'Good morning Mr {}'.format(last_name)
+
+# price = 42.4242424242
+f'${price:.2f}' # '$42.42'
+f'${price:06.2f}' # '$0042.42'
+```
+
 ### How do I check if a substring exists within a string?
 
 ```python
@@ -55,6 +70,12 @@ $ python3 -m timeit '"-".join(str(n) for n in range(100))'
 ```bash
 pip freeze > requirements.txt
 ```
+
+### What is a basestring?
+
+### What are the strings with u in front?
+
+u''
 
 ### How do I write a docstring?
 
@@ -129,6 +150,25 @@ isinstance(a, SomeType)
 ### Does Python have a ternary operator?
 
 Yes. `a if condition else b` returns a if condition evaluates to True, else b is returned.
+
+### What is pytest?
+
+A [testing](#what-are-tests) [framework](#what-is-a-framework) with less [boilerplate](#what-is-boilerplate) than the standard library module `unittest`.
+
+unittest:
+
+```python
+class TestExample(unittest.TestCase):
+    def test_hello_world(self):
+        self.assertEqual("hello world", "hello world")
+```
+
+pytest:
+
+```python
+def test_hello_world():
+    assert "hello_world" == "hello_world"
+```
 
 ### How do I show print messages when running pytest?
 
